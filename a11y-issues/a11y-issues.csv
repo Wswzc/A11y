@@ -1,0 +1,819 @@
+Summary,Description,Steps,Selector,Page,Severity,Labels
+"[Contrast][首页] color-contrast issue","Page: 首页
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a background gradient
+Selector: .greeting
+HTML: <span data-v-ba0f6c19="""" class=""greeting"">您好</span>","导航到 首页，定位元素：.greeting",".greeting","首页","Serious","contrast"
+"[Contrast][首页] color-contrast issue","Page: 首页
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a background gradient
+Selector: .message
+HTML: <p data-v-ba0f6c19="""" class=""message"">准备好使用联想智会，开始你的下一场高效的会议了吗？</p>","导航到 首页，定位元素：.message",".message","首页","Serious","contrast"
+"[Contrast][首页] color-contrast issue","Page: 首页
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a pseudo element
+Selector: #tab-0 > span[data-v-d43c4515=""""] > .acc-btn[role=""tab""][data-v-d43c4515=""""]
+HTML: <button data-v-d43c4515="""" class=""acc-btn"" role=""tab"" aria-selected=""true"" aria-label=""meeting setting ,常规设置，in use，button"" style=""box-sizing: border-box; width: 100%; height: 100%; padding: 0px 2px;"">常规设置</button>","导航到 首页，定位元素：#tab-0 > span[data-v-d43c4515=""""] > .acc-btn[role=""tab""][data-v-d43c4515=""""]","#tab-0 > span[data-v-d43c4515=""""] > .acc-btn[role=""tab""][data-v-d43c4515=""""]","首页","Serious","contrast"
+"[Contrast][首页] color-contrast issue","Page: 首页
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a pseudo element
+Selector: button[aria-label=""meeting setting ,123，button""]
+HTML: <button data-v-d43c4515="""" class=""acc-btn"" role=""tab"" aria-selected=""false"" aria-label=""meeting setting ,123，button"" style=""box-sizing: border-box; width: 100%; height: 100%; padding: 0px 2px;"">123</button>","导航到 首页，定位元素：button[aria-label=""meeting setting ,123，button""]","button[aria-label=""meeting setting ,123，button""]","首页","Serious","contrast"
+"[Contrast][首页] color-contrast issue","Page: 首页
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a pseudo element
+Selector: button[aria-label=""meeting setting ,实打实，button""]
+HTML: <button data-v-d43c4515="""" class=""acc-btn"" role=""tab"" aria-selected=""false"" aria-label=""meeting setting ,实打实，button"" style=""box-sizing: border-box; width: 100%; height: 100%; padding: 0px 2px;"">实打实</button>","导航到 首页，定位元素：button[aria-label=""meeting setting ,实打实，button""]","button[aria-label=""meeting setting ,实打实，button""]","首页","Serious","contrast"
+"[Contrast][首页] color-contrast issue","Page: 首页
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined because element contains an image node
+Selector: p[data-v-e778a605=""""]
+HTML: <p data-v-e778a605="""">预览</p>","导航到 首页，定位元素：p[data-v-e778a605=""""]","p[data-v-e778a605=""""]","首页","Serious","contrast"
+"[Contrast][首页] color-contrast issue","Page: 首页
+Rule: color-contrast
+Reason: Fix any of the following:
+  Unable to determine contrast ratio
+Selector: .mic-select > .arco-select-view-input.arco-select-view-input-hidden[readonly=""""]
+HTML: <input class=""arco-select-view-input arco-select-view-input-hidden"" readonly="""" role=""combobox"" aria-expanded=""false"" aria-haspopup=""listbox"" tabindex=""-1"" value="""" aria-activedescendant=""arco-select-option-__arco__option__string-{0.0.1.00000000}.{eb5e495f-5089-4e7f-8b11-48baf092289c}"">","导航到 首页，定位元素：.mic-select > .arco-select-view-input.arco-select-view-input-hidden[readonly=""""]",".mic-select > .arco-select-view-input.arco-select-view-input-hidden[readonly=""""]","首页","Serious","contrast"
+"[Contrast][首页] color-contrast issue","Page: 首页
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a background gradient
+Selector: .colorful.custom-button[data-v-a7028616=""""]
+HTML: <button data-v-a7028616="""" data-v-18f13646="""" class=""arco-btn arco-btn-pr..."" type=""button"" aria-label=""Transcription Settin..."" style=""width: 100%; --custo..."">","导航到 首页，定位元素：.colorful.custom-button[data-v-a7028616=""""]",".colorful.custom-button[data-v-a7028616=""""]","首页","Serious","contrast"
+"[Contrast][首页] color-contrast issue","Page: 首页
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a background gradient
+Selector: #avatar-footer-bottom > .arco-card.arco-card-size-medium.arco-card-bordered > .arco-card-body > .avatar-temporary-container[data-v-e59318a9=""""] > .avatar-temporary__actions-wrapper[data-v-e59318a9=""""] > .avatar-temporary__button.custom-button[data-v-a7028616=""""]
+HTML: <button data-v-a7028616="""" data-v-e59318a9="""" class=""arco-btn arco-btn-pr..."" type=""button"" aria-label=""Temporary leave，Reco..."" style=""--custom-bg: var(--c..."">","导航到 首页，定位元素：#avatar-footer-bottom > .arco-card.arco-card-size-medium.arco-card-bordered > .arco-card-body > .avatar-temporary-container[data-v-e59318a9=""""] > .avatar-temporary__actions-wrapper[data-v-e59318a9=""""] > .avatar-temporary__button.custom-button[data-v-a7028616=""""]","#avatar-footer-bottom > .arco-card.arco-card-size-medium.arco-card-bordered > .arco-card-body > .avatar-temporary-container[data-v-e59318a9=""""] > .avatar-temporary__actions-wrapper[data-v-e59318a9=""""] > .avatar-temporary__button.custom-button[data-v-a7028616=""""]","首页","Serious","contrast"
+"[Accessibility][首页] Missing lang attribute","Page: 首页
+Document <html> element has no lang attribute (lang is empty).
+Recommendation: add <html lang=""zh-CN""> or appropriate language.","检查页面源代码，确保 <html> 有正确的 lang 属性。","html","首页","Serious","lang"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: BUTTON
+Role: 
+Aria: 
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: BUTTON
+Role: 
+Aria: 
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: BUTTON
+Role: 
+Aria: Lenovo smart meeting,navigation，how to use page，button
+Text: 
+Computed outline: rgb(59, 59, 59) solid 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: BUTTON
+Role: 
+Aria: Lenovo smart meeting,navigation，user center and setting page，button
+Text: 
+Computed outline: rgb(59, 59, 59) solid 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,edit meeting mode setting，button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,edit meeting mode setting，button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,go to previous page,button
+Text: 
+Computed outline: rgb(204, 204, 204) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,go to next page，button
+Text: 
+Computed outline: rgb(204, 204, 204) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,create a new meeting setting mode，button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: BUTTON
+Role: 
+Aria: Apply Meeting Settings changes
+Text: 已应用
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: BUTTON
+Role: 
+Aria: Complete Video Stream Settings Page，button
+Text: 
+Computed outline: rgb(59, 59, 59) solid 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: INPUT
+Role: combobox
+Aria: 
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: BUTTON
+Role: 
+Aria: Transcription Settings,Start Transcription,Button
+Text: 开始
+Computed outline: rgb(255, 255, 255) solid 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Keyboard][首页] Focusable element without visible focus outline","Page: 首页
+Tag: BUTTON
+Role: 
+Aria: Temporary leave，Record a 3-second video to serve as your temporary meetingpresence when you need to step away for a while，back now，button
+Text: 现在离开
+Computed outline: rgb(255, 255, 255) solid 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","首页","Moderate","keyboard,focus"
+"[Zoom][首页] Page layout overflows at 200% zoom","Page: 首页
+scrollWidth: 1481, innerWidth: 900
+Result: content overflows viewport at 200% zoom. Recommendation: ensure responsive layout, avoid fixed-width containers, test at 200-400% zoom.","打开页面并将缩放设为 200%（或使用系统放大镜），检查是否出现横向滚动或内容裁切。","","首页","Moderate","zoom,responsive"
+"[Accessibility][历史记录] Missing lang attribute","Page: 历史记录
+Document <html> element has no lang attribute (lang is empty).
+Recommendation: add <html lang=""zh-CN""> or appropriate language.","检查页面源代码，确保 <html> 有正确的 lang 属性。","html","历史记录","Serious","lang"
+"[Keyboard][历史记录] Focusable element without visible focus outline","Page: 历史记录
+Tag: BUTTON
+Role: 
+Aria: 
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","历史记录","Moderate","keyboard,focus"
+"[Keyboard][历史记录] Focusable element without visible focus outline","Page: 历史记录
+Tag: BUTTON
+Role: 
+Aria: 
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","历史记录","Moderate","keyboard,focus"
+"[Keyboard][历史记录] Focusable element without visible focus outline","Page: 历史记录
+Tag: BUTTON
+Role: 
+Aria: Lenovo smart meeting,navigation，how to use page，button
+Text: 
+Computed outline: rgb(59, 59, 59) solid 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","历史记录","Moderate","keyboard,focus"
+"[Keyboard][历史记录] Focusable element without visible focus outline","Page: 历史记录
+Tag: BUTTON
+Role: 
+Aria: Lenovo smart meeting,navigation，user center and setting page，button
+Text: 
+Computed outline: rgb(59, 59, 59) solid 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","历史记录","Moderate","keyboard,focus"
+"[Keyboard][历史记录] Focusable element without visible focus outline","Page: 历史记录
+Tag: DIV
+Role: tab
+Aria: 
+Text: 录音文本1
+Computed outline: rgb(100, 65, 171) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","历史记录","Moderate","keyboard,focus"
+"[Keyboard][历史记录] Focusable element without visible focus outline","Page: 历史记录
+Tag: TR
+Role: row
+Aria: 
+Text: 标题
+	
+持续时间
+	
+创建时间
+	
+操作
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","历史记录","Moderate","keyboard,focus"
+"[Keyboard][历史记录] Focusable element without visible focus outline","Page: 历史记录
+Tag: TR
+Role: row
+Aria: 
+Text: 20251122_141522_889
+	
+02:22
+	
+2025-11-22 14:17
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","历史记录","Moderate","keyboard,focus"
+"[Keyboard][历史记录] Focusable element without visible focus outline","Page: 历史记录
+Tag: BUTTON
+Role: 
+Aria: 
+Text: 
+Computed outline: rgb(59, 59, 59) solid 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","历史记录","Moderate","keyboard,focus"
+"[Zoom][历史记录] Page layout overflows at 200% zoom","Page: 历史记录
+scrollWidth: 1408, innerWidth: 900
+Result: content overflows viewport at 200% zoom. Recommendation: ensure responsive layout, avoid fixed-width containers, test at 200-400% zoom.","打开页面并将缩放设为 200%（或使用系统放大镜），检查是否出现横向滚动或内容裁切。","","历史记录","Moderate","zoom,responsive"
+"[Contrast][如何使用] color-contrast issue","Page: 如何使用
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a background gradient
+Selector: .greeting
+HTML: <span data-v-ba0f6c19="""" class=""greeting"">您好</span>","导航到 如何使用，定位元素：.greeting",".greeting","如何使用","Serious","contrast"
+"[Contrast][如何使用] color-contrast issue","Page: 如何使用
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a background gradient
+Selector: .message
+HTML: <p data-v-ba0f6c19="""" class=""message"">准备好使用联想智会，开始你的下一场高效的会议了吗？</p>","导航到 如何使用，定位元素：.message",".message","如何使用","Serious","contrast"
+"[Contrast][如何使用] color-contrast issue","Page: 如何使用
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a pseudo element
+Selector: #tab-0 > span[data-v-d43c4515=""""] > .acc-btn[role=""tab""][data-v-d43c4515=""""]
+HTML: <button data-v-d43c4515="""" class=""acc-btn"" role=""tab"" aria-selected=""true"" aria-label=""meeting setting ,常规设置，in use，button"" style=""box-sizing: border-box; width: 100%; height: 100%; padding: 0px 2px;"">常规设置</button>","导航到 如何使用，定位元素：#tab-0 > span[data-v-d43c4515=""""] > .acc-btn[role=""tab""][data-v-d43c4515=""""]","#tab-0 > span[data-v-d43c4515=""""] > .acc-btn[role=""tab""][data-v-d43c4515=""""]","如何使用","Serious","contrast"
+"[Contrast][如何使用] color-contrast issue","Page: 如何使用
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a pseudo element
+Selector: button[aria-label=""meeting setting ,123，button""]
+HTML: <button data-v-d43c4515="""" class=""acc-btn"" role=""tab"" aria-selected=""false"" aria-label=""meeting setting ,123，button"" style=""box-sizing: border-box; width: 100%; height: 100%; padding: 0px 2px;"">123</button>","导航到 如何使用，定位元素：button[aria-label=""meeting setting ,123，button""]","button[aria-label=""meeting setting ,123，button""]","如何使用","Serious","contrast"
+"[Contrast][如何使用] color-contrast issue","Page: 如何使用
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a pseudo element
+Selector: button[aria-label=""meeting setting ,实打实，button""]
+HTML: <button data-v-d43c4515="""" class=""acc-btn"" role=""tab"" aria-selected=""false"" aria-label=""meeting setting ,实打实，button"" style=""box-sizing: border-box; width: 100%; height: 100%; padding: 0px 2px;"">实打实</button>","导航到 如何使用，定位元素：button[aria-label=""meeting setting ,实打实，button""]","button[aria-label=""meeting setting ,实打实，button""]","如何使用","Serious","contrast"
+"[Contrast][如何使用] color-contrast issue","Page: 如何使用
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined because element contains an image node
+Selector: p[data-v-e778a605=""""]
+HTML: <p data-v-e778a605="""">预览</p>","导航到 如何使用，定位元素：p[data-v-e778a605=""""]","p[data-v-e778a605=""""]","如何使用","Serious","contrast"
+"[Contrast][如何使用] color-contrast issue","Page: 如何使用
+Rule: color-contrast
+Reason: Fix any of the following:
+  Unable to determine contrast ratio
+Selector: .mic-select > .arco-select-view-input.arco-select-view-input-hidden[readonly=""""]
+HTML: <input class=""arco-select-view-input arco-select-view-input-hidden"" readonly="""" role=""combobox"" aria-expanded=""false"" aria-haspopup=""listbox"" tabindex=""-1"" value="""" aria-activedescendant=""arco-select-option-__arco__option__string-{0.0.1.00000000}.{eb5e495f-5089-4e7f-8b11-48baf092289c}"">","导航到 如何使用，定位元素：.mic-select > .arco-select-view-input.arco-select-view-input-hidden[readonly=""""]",".mic-select > .arco-select-view-input.arco-select-view-input-hidden[readonly=""""]","如何使用","Serious","contrast"
+"[Contrast][如何使用] color-contrast issue","Page: 如何使用
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a background gradient
+Selector: .colorful.custom-button[data-v-a7028616=""""]
+HTML: <button data-v-a7028616="""" data-v-18f13646="""" class=""arco-btn arco-btn-pr..."" type=""button"" aria-label=""Transcription Settin..."" style=""width: 100%; --custo..."">","导航到 如何使用，定位元素：.colorful.custom-button[data-v-a7028616=""""]",".colorful.custom-button[data-v-a7028616=""""]","如何使用","Serious","contrast"
+"[Contrast][如何使用] color-contrast issue","Page: 如何使用
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a background gradient
+Selector: #avatar-footer-bottom > .arco-card.arco-card-size-medium.arco-card-bordered > .arco-card-body > .avatar-temporary-container[data-v-e59318a9=""""] > .avatar-temporary__actions-wrapper[data-v-e59318a9=""""] > .avatar-temporary__button.custom-button[data-v-a7028616=""""]
+HTML: <button data-v-a7028616="""" data-v-e59318a9="""" class=""arco-btn arco-btn-pr..."" type=""button"" aria-label=""Temporary leave，Reco..."" style=""--custom-bg: var(--c..."">","导航到 如何使用，定位元素：#avatar-footer-bottom > .arco-card.arco-card-size-medium.arco-card-bordered > .arco-card-body > .avatar-temporary-container[data-v-e59318a9=""""] > .avatar-temporary__actions-wrapper[data-v-e59318a9=""""] > .avatar-temporary__button.custom-button[data-v-a7028616=""""]","#avatar-footer-bottom > .arco-card.arco-card-size-medium.arco-card-bordered > .arco-card-body > .avatar-temporary-container[data-v-e59318a9=""""] > .avatar-temporary__actions-wrapper[data-v-e59318a9=""""] > .avatar-temporary__button.custom-button[data-v-a7028616=""""]","如何使用","Serious","contrast"
+"[Accessibility][如何使用] Missing lang attribute","Page: 如何使用
+Document <html> element has no lang attribute (lang is empty).
+Recommendation: add <html lang=""zh-CN""> or appropriate language.","检查页面源代码，确保 <html> 有正确的 lang 属性。","html","如何使用","Serious","lang"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: A
+Role: 
+Aria: Lenovo smart meeting,navigation，home page，button
+Text: 
+Computed outline: rgb(0, 0, 238) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: 
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: A
+Role: 
+Aria: Lenovo smart meeting,navigation，recording and detection history page，button
+Text: 
+Computed outline: rgb(0, 0, 238) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: 
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: Lenovo smart meeting,navigation，how to use page，button
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: Lenovo smart meeting,navigation，user center and setting page，button
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: Minimize, button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: Maximize, button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: close,button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: tab
+Aria: meeting setting ,常规设置，in use，button
+Text: 常规设置
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: tab
+Aria: meeting setting ,123，button
+Text: 123
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,edit meeting mode setting，button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: tab
+Aria: meeting setting ,实打实，button
+Text: 实打实
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,edit meeting mode setting，button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,go to previous page,button
+Text: 
+Computed outline: rgb(204, 204, 204) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,go to next page，button
+Text: 
+Computed outline: rgb(204, 204, 204) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,create a new meeting setting mode，button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: Apply Meeting Settings changes
+Text: 已应用
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: DIV
+Role: button
+Aria: Camera is on
+Text: 预览
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: 左右分屏
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: External
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: Split-screen
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: Pic-in-pic
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: Internal
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: Complete Video Stream Settings Page，button
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: SPAN
+Role: combobox
+Aria: 
+Text: 阵列麦克风 (AMD Audio Device)
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: INPUT
+Role: combobox
+Aria: 
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: Transcription Settings,Start Transcription,Button
+Text: 开始
+Computed outline: rgb(255, 255, 255) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: Temporary leave，Record a 3-second video to serve as your temporary meetingpresence when you need to step away for a while，back now，button
+Text: 现在离开
+Computed outline: rgb(255, 255, 255) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: DIV
+Role: dialog
+Aria: transcription-label
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: 跳过引导流程，当前第3步，共4步
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: 返回上一个引导步骤，当前第3步，共4步
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Keyboard][如何使用] Focusable element without visible focus outline","Page: 如何使用
+Tag: BUTTON
+Role: 
+Aria: 进入第4个引导步骤，当前第3步，共4步
+Text: 
+Computed outline: rgb(255, 255, 255) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","如何使用","Moderate","keyboard,focus"
+"[Zoom][如何使用] Page layout overflows at 200% zoom","Page: 如何使用
+scrollWidth: 1481, innerWidth: 900
+Result: content overflows viewport at 200% zoom. Recommendation: ensure responsive layout, avoid fixed-width containers, test at 200-400% zoom.","打开页面并将缩放设为 200%（或使用系统放大镜），检查是否出现横向滚动或内容裁切。","","如何使用","Moderate","zoom,responsive"
+"[Contrast][用户中心] color-contrast issue","Page: 用户中心
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a background gradient
+Selector: .greeting
+HTML: <span data-v-ba0f6c19="""" class=""greeting"">您好</span>","导航到 用户中心，定位元素：.greeting",".greeting","用户中心","Serious","contrast"
+"[Contrast][用户中心] color-contrast issue","Page: 用户中心
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a background gradient
+Selector: .message
+HTML: <p data-v-ba0f6c19="""" class=""message"">准备好使用联想智会，开始你的下一场高效的会议了吗？</p>","导航到 用户中心，定位元素：.message",".message","用户中心","Serious","contrast"
+"[Contrast][用户中心] color-contrast issue","Page: 用户中心
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a pseudo element
+Selector: #tab-0 > span[data-v-d43c4515=""""] > .acc-btn[role=""tab""][data-v-d43c4515=""""]
+HTML: <button data-v-d43c4515="""" class=""acc-btn"" role=""tab"" aria-selected=""true"" aria-label=""meeting setting ,常规设置，in use，button"" style=""box-sizing: border-box; width: 100%; height: 100%; padding: 0px 2px;"">常规设置</button>","导航到 用户中心，定位元素：#tab-0 > span[data-v-d43c4515=""""] > .acc-btn[role=""tab""][data-v-d43c4515=""""]","#tab-0 > span[data-v-d43c4515=""""] > .acc-btn[role=""tab""][data-v-d43c4515=""""]","用户中心","Serious","contrast"
+"[Contrast][用户中心] color-contrast issue","Page: 用户中心
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a pseudo element
+Selector: button[aria-label=""meeting setting ,123，button""]
+HTML: <button data-v-d43c4515="""" class=""acc-btn"" role=""tab"" aria-selected=""false"" aria-label=""meeting setting ,123，button"" style=""box-sizing: border-box; width: 100%; height: 100%; padding: 0px 2px;"">123</button>","导航到 用户中心，定位元素：button[aria-label=""meeting setting ,123，button""]","button[aria-label=""meeting setting ,123，button""]","用户中心","Serious","contrast"
+"[Contrast][用户中心] color-contrast issue","Page: 用户中心
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a pseudo element
+Selector: button[aria-label=""meeting setting ,实打实，button""]
+HTML: <button data-v-d43c4515="""" class=""acc-btn"" role=""tab"" aria-selected=""false"" aria-label=""meeting setting ,实打实，button"" style=""box-sizing: border-box; width: 100%; height: 100%; padding: 0px 2px;"">实打实</button>","导航到 用户中心，定位元素：button[aria-label=""meeting setting ,实打实，button""]","button[aria-label=""meeting setting ,实打实，button""]","用户中心","Serious","contrast"
+"[Contrast][用户中心] color-contrast issue","Page: 用户中心
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined because element contains an image node
+Selector: p[data-v-e778a605=""""]
+HTML: <p data-v-e778a605="""">预览</p>","导航到 用户中心，定位元素：p[data-v-e778a605=""""]","p[data-v-e778a605=""""]","用户中心","Serious","contrast"
+"[Contrast][用户中心] color-contrast issue","Page: 用户中心
+Rule: color-contrast
+Reason: Fix any of the following:
+  Unable to determine contrast ratio
+Selector: .mic-select > .arco-select-view-input.arco-select-view-input-hidden[readonly=""""]
+HTML: <input class=""arco-select-view-input arco-select-view-input-hidden"" readonly="""" role=""combobox"" aria-expanded=""false"" aria-haspopup=""listbox"" tabindex=""-1"" value="""" aria-activedescendant=""arco-select-option-__arco__option__string-{0.0.1.00000000}.{eb5e495f-5089-4e7f-8b11-48baf092289c}"">","导航到 用户中心，定位元素：.mic-select > .arco-select-view-input.arco-select-view-input-hidden[readonly=""""]",".mic-select > .arco-select-view-input.arco-select-view-input-hidden[readonly=""""]","用户中心","Serious","contrast"
+"[Contrast][用户中心] color-contrast issue","Page: 用户中心
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a background gradient
+Selector: .colorful.custom-button[data-v-a7028616=""""]
+HTML: <button data-v-a7028616="""" data-v-18f13646="""" class=""arco-btn arco-btn-pr..."" type=""button"" aria-label=""Transcription Settin..."" style=""width: 100%; --custo..."">","导航到 用户中心，定位元素：.colorful.custom-button[data-v-a7028616=""""]",".colorful.custom-button[data-v-a7028616=""""]","用户中心","Serious","contrast"
+"[Contrast][用户中心] color-contrast issue","Page: 用户中心
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a background gradient
+Selector: #avatar-footer-bottom > .arco-card.arco-card-size-medium.arco-card-bordered > .arco-card-body > .avatar-temporary-container[data-v-e59318a9=""""] > .avatar-temporary__actions-wrapper[data-v-e59318a9=""""] > .avatar-temporary__button.custom-button[data-v-a7028616=""""]
+HTML: <button data-v-a7028616="""" data-v-e59318a9="""" class=""arco-btn arco-btn-pr..."" type=""button"" aria-label=""Temporary leave，Reco..."" style=""--custom-bg: var(--c..."">","导航到 用户中心，定位元素：#avatar-footer-bottom > .arco-card.arco-card-size-medium.arco-card-bordered > .arco-card-body > .avatar-temporary-container[data-v-e59318a9=""""] > .avatar-temporary__actions-wrapper[data-v-e59318a9=""""] > .avatar-temporary__button.custom-button[data-v-a7028616=""""]","#avatar-footer-bottom > .arco-card.arco-card-size-medium.arco-card-bordered > .arco-card-body > .avatar-temporary-container[data-v-e59318a9=""""] > .avatar-temporary__actions-wrapper[data-v-e59318a9=""""] > .avatar-temporary__button.custom-button[data-v-a7028616=""""]","用户中心","Serious","contrast"
+"[Contrast][用户中心] color-contrast issue","Page: 用户中心
+Rule: color-contrast
+Reason: Fix any of the following:
+  Element's background color could not be determined due to a background gradient
+Selector: .login-button
+HTML: <button data-v-d38ad4a9="""" class=""arco-btn arco-btn-primary arco-btn-shape-square arco-btn-size-medium arco-btn-status-normal login-button"" type=""button"" aria-label=""Sign in with browser"" role=""button"" tabindex=""0""><!--v-if-->通过浏览器登录</button>","导航到 用户中心，定位元素：.login-button",".login-button","用户中心","Serious","contrast"
+"[Contrast][用户中心] Violation: color-contrast","Page: 用户中心
+Rule: color-contrast
+Message: Element has insufficient color contrast of 2.74 (foreground color: #9c9c9c, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+Selector: .login-title
+HTML: <div data-v-d38ad4a9="""" class=""login-title"">使用您的联想ID登录</div>","导航到 用户中心，定位元素：.login-title",".login-title","用户中心","Serious","contrast"
+"[Accessibility][用户中心] Missing lang attribute","Page: 用户中心
+Document <html> element has no lang attribute (lang is empty).
+Recommendation: add <html lang=""zh-CN""> or appropriate language.","检查页面源代码，确保 <html> 有正确的 lang 属性。","html","用户中心","Serious","lang"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: A
+Role: 
+Aria: Lenovo smart meeting,navigation，home page，button
+Text: 
+Computed outline: rgb(0, 0, 238) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: 
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: A
+Role: 
+Aria: Lenovo smart meeting,navigation，recording and detection history page，button
+Text: 
+Computed outline: rgb(0, 0, 238) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: 
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: Lenovo smart meeting,navigation，how to use page，button
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: Lenovo smart meeting,navigation，user center and setting page，button
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: Minimize, button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: Maximize, button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: close,button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: tab
+Aria: meeting setting ,常规设置，in use，button
+Text: 常规设置
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: tab
+Aria: meeting setting ,123，button
+Text: 123
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,edit meeting mode setting，button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: tab
+Aria: meeting setting ,实打实，button
+Text: 实打实
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,edit meeting mode setting，button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,go to previous page,button
+Text: 
+Computed outline: rgb(204, 204, 204) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,go to next page，button
+Text: 
+Computed outline: rgb(204, 204, 204) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: meeting setting ,create a new meeting setting mode，button
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: Apply Meeting Settings changes
+Text: 已应用
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: DIV
+Role: button
+Aria: Camera is on
+Text: 预览
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: 左右分屏
+Text: 
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: External
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: Split-screen
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: Pic-in-pic
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: Internal
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: Complete Video Stream Settings Page，button
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: SPAN
+Role: combobox
+Aria: 
+Text: 阵列麦克风 (AMD Audio Device)
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: INPUT
+Role: combobox
+Aria: 
+Text: 
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: Transcription Settings,Start Transcription,Button
+Text: 开始
+Computed outline: rgb(255, 255, 255) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: 
+Aria: Temporary leave，Record a 3-second video to serve as your temporary meetingpresence when you need to step away for a while，back now，button
+Text: 现在离开
+Computed outline: rgb(255, 255, 255) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: DIV
+Role: 
+Aria: 
+Text: 使用您的联想ID登录
+通过浏览器登录
+设置
+Computed outline: rgb(0, 0, 0) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: BUTTON
+Role: button
+Aria: Sign in with browser
+Text: 通过浏览器登录
+Computed outline: rgb(255, 255, 255) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Keyboard][用户中心] Focusable element without visible focus outline","Page: 用户中心
+Tag: LI
+Role: button
+Aria: Settings
+Text: 设置
+Computed outline: rgb(59, 59, 59) none 0px
+Recommendation: provide a clear :focus-visible style (outline or box-shadow) with sufficient contrast.","使用键盘 Tab 导航到该控件，观察是否有清晰焦点样式。","","用户中心","Moderate","keyboard,focus"
+"[Zoom][用户中心] Page layout overflows at 200% zoom","Page: 用户中心
+scrollWidth: 1481, innerWidth: 900
+Result: content overflows viewport at 200% zoom. Recommendation: ensure responsive layout, avoid fixed-width containers, test at 200-400% zoom.","打开页面并将缩放设为 200%（或使用系统放大镜），检查是否出现横向滚动或内容裁切。","","用户中心","Moderate","zoom,responsive"
