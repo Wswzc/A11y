@@ -6,7 +6,7 @@ const fs = require('fs');
 const axeCore = require('axe-core'); // 直接引入 axe-core 源文件
 
 // -------------------------------------------------------
-// 📝 配置区域
+// 配置区域
 // -------------------------------------------------------
 
 const CONFIG = {
@@ -18,7 +18,7 @@ const CONFIG = {
   processName: 'Lenovo Smart Meeting.exe'
 };
 
-// 👇 定义要巡检的页面列表
+//  定义要巡检的页面列表
 // name: 在报告中显示的页面名称
 // selector: 用于导航到该页面的、唯一的 CSS 选择器
 const pagesToScan = [
@@ -29,7 +29,7 @@ const pagesToScan = [
 ];
 
 // -------------------------------------------------------
-// 🛠️ 辅助函数
+//  辅助函数
 // -------------------------------------------------------
 
 /**
@@ -39,7 +39,7 @@ const pagesToScan = [
  * @returns {Promise<import('axe-core').AxeResults>}
  */
 async function scanPage(page, pageName) {
-  console.log(`\n---\n🔍 开始扫描页面: [${pageName}]...`);
+  console.log(`\n---\n开始扫描页面: [${pageName}]...`);
   
   // 等待页面稳定
   await page.waitForLoadState('domcontentloaded');
@@ -48,7 +48,7 @@ async function scanPage(page, pageName) {
   // 注入 axe 脚本 (如果尚未注入)
   const isAxeInjected = await page.evaluate(() => window.axe !== undefined);
   if (!isAxeInjected) {
-    console.log('💉 首次注入 axe-core 脚本...');
+    console.log('首次注入 axe-core 脚本...');
     await page.evaluate((source) => {
       const script = document.createElement('script');
       script.textContent = source;
@@ -64,7 +64,7 @@ async function scanPage(page, pageName) {
     });
   }, { pageName }); // 传递上下文，虽然这里没直接用，但可用于调试
 
-  console.log(`✅ 页面 [${pageName}] 扫描完成，发现 ${results.violations.length} 个问题。`);
+  console.log(`页面 [${pageName}] 扫描完成，发现 ${results.violations.length} 个问题。`);
   
   // 为报告添加页面信息
   results.url = pageName; // 使用页面名称作为标识
@@ -73,22 +73,22 @@ async function scanPage(page, pageName) {
 
 
 // -------------------------------------------------------
-// 🚀 主执行流程
+//  主执行流程
 // -------------------------------------------------------
 
 (async () => {
   // 1. 清理旧进程
-  console.log(`🔄 正在清理旧进程...`);
+  console.log(`正在清理旧进程...`);
   try {
     execSync(`taskkill /F /IM "${CONFIG.processName}"`, { stdio: 'ignore' });
-    console.log('✅ 旧进程已清理');
+    console.log('旧进程已清理');
   } catch (e) {
-    console.log('ℹ️ 无需清理 (进程不存在)');
+    console.log('无需清理 (进程不存在)');
   }
   await new Promise(r => setTimeout(r, 1000));
 
   // 2. 启动应用
-  console.log('🚀 正在启动客户端...');
+  console.log('正在启动客户端...');
   const electronApp = await electron.launch({
     executablePath: CONFIG.exePath,
     timeout: 60000,
@@ -101,11 +101,11 @@ async function scanPage(page, pageName) {
   try {
     // 3. 获取窗口并开始巡检
     window = await electronApp.firstWindow();
-    console.log(`✅ 成功连接窗口: "${await window.title()}"`);
+    console.log(`成功连接窗口: "${await window.title()}"`);
 
     for (const page of pagesToScan) {
       try {
-        console.log(`\n🧭 正在导航到页面: [${page.name}]...`);
+        console.log(`\n正在导航到页面: [${page.name}]...`);
         const navElement = window.locator(page.selector);
         await navElement.click();
         
@@ -113,7 +113,7 @@ async function scanPage(page, pageName) {
         allResults.push(results);
         
       } catch (navError) {
-        console.error(`❌ 导航或扫描页面 [${page.name}] 失败:`, navError.message);
+        console.error(`导航或扫描页面 [${page.name}] 失败:`, navError.message);
         console.error(`   使用的选择器: ${page.selector}`);
         // 可选：在这里添加截图逻辑以帮助调试
         // await window.screenshot({ path: `error_${page.name}.png` });
@@ -136,7 +136,7 @@ async function scanPage(page, pageName) {
     });
     
     // 5. 生成统一报告
-    console.log('\n\n📊 所有页面巡检完毕，正在生成统一的 HTML 报告...');
+    console.log('\n\n所有页面巡检完毕，正在生成统一的 HTML 报告...');
     if (!fs.existsSync(CONFIG.reportDir)) fs.mkdirSync(CONFIG.reportDir);
     
     const reportName = `report-multipage-${Date.now()}.html`;
@@ -149,11 +149,11 @@ async function scanPage(page, pageName) {
       }
     });
     
-    console.log(`\n✅ 报告已生成! 请打开查看详情:`);
-    console.log(`👉 ${path.resolve(CONFIG.reportDir, reportName)}\n`);
+    console.log(`\n报告已生成! 请打开查看详情:`);
+    console.log(` ${path.resolve(CONFIG.reportDir, reportName)}\n`);
 
   } catch (e) {
-    console.error('❌ 发生严重错误:', e);
+    console.error('发生严重错误:', e);
   } finally {
     // 5. 关闭应用
     console.log(' closing app');

@@ -1,3 +1,29 @@
+/* 
+  A11y 检测机制与方法概述（插入于文件顶部，供维护者参考）：
+  - 启动与连接：
+    使用 Playwright 的 _electron.launch 启动目标 exe 并获取第一个窗口（firstWindow）。
+  - 页面导航与稳定性：
+    使用提供的 selector 点击导航元素，等待 domcontentloaded 并做短暂硬等待以确保动态内容加载完毕。
+  - axe 注入与运行：
+    检查 window.axe 是否存在；若无则把 axe-core.source 注入到 document.head；
+    通过 window.axe.run(document, options) 执行无障碍规则集，收集 violations/passes 等。
+  - 额外自动化检查（补充 axe）：
+    1) color-contrast：通过 axe 的 runOnly 指定 'color-contrast' 规则快速检测对比度问题。
+    2) accessibility snapshot：使用 Playwright 的 page.accessibility.snapshot() 获取无障碍树并检查 lang。
+    3) 键盘与焦点检查：在页面内遍历交互元素（a, button, input, textarea, select, [role="button"], [tabindex]），尝试 focus 并读取 getComputedStyle 的 outline/boxShadow 来判断焦点可见性，记录 selector、文本和焦点状态，标记潜在问题。
+    4) zoom 检查：临时设置 document.body.style.zoom = '2' 检查是否发生横向溢出（scrollWidth > innerWidth）。
+  - 问题证据与截图：
+    对于没有明显焦点样式的问题元素，优先使用 locator.screenshot(selector) 保存局部截图，失败则回退到 page.screenshot 保存整页图片，图片保存在 a11y-issues/screenshots。
+  - 报告与聚合：
+    将每个页面的 axe 结果收集并合并（violations/passes/incomplete/inapplicable），使用 axe-html-reporter 生成统一 HTML 报告；把额外检查结果写为 JSON 以便离线分析。
+  - 容错与调试：
+    所有网络/DOM 操作均包裹 try/catch，遇到导航或扫描失败时记录 selector 与错误信息；对关键操作设置超时与等待以兼容动态渲染场景。
+  - 可扩展点建议：
+    * 将 axe.run 的配置外置为可配置项（允许按项目打开/关闭规则）。
+    * 增加更多自动化检测规则（例如跳过视觉依赖的控件，或加入 ARIA 结构一致性检查）。
+    * 在截图时增加元素坐标裁剪以减少存储与定位成本。
+*/
+
 const { _electron: electron } = require('playwright');
 const { createHtmlReport } = require('axe-html-reporter');
 const path = require('path');
@@ -6,7 +32,7 @@ const fs = require('fs');
 const axeCore = require('axe-core'); // 直接引入 axe-core 源文件
 
 // -------------------------------------------------------
-// 📝 配置区域
+//  配置区域
 // -------------------------------------------------------
 
 const CONFIG = {
@@ -18,7 +44,7 @@ const CONFIG = {
   processName: 'Lenovo Smart Meeting.exe'
 };
 
-// 👇 定义要巡检的页面列表
+//  定义要巡检的页面列表
 // name: 在报告中显示的页面名称
 // selector: 用于导航到该页面的、唯一的 CSS 选择器
 const pagesToScan = [
@@ -29,7 +55,7 @@ const pagesToScan = [
 ];
 
 // -------------------------------------------------------
-// 🛠️ 辅助函数
+//  辅助函数
 // -------------------------------------------------------
 
 /**
@@ -39,7 +65,7 @@ const pagesToScan = [
  * @returns {Promise<import('axe-core').AxeResults>}
  */
 async function scanPage(page, pageName) {
-  console.log(`\n---\n🔍 开始扫描页面: [${pageName}]...`);
+  console.log(`\n---\n 开始扫描页面: [${pageName}]...`);
   
   // 等待页面稳定
   await page.waitForLoadState('domcontentloaded');
@@ -48,7 +74,7 @@ async function scanPage(page, pageName) {
   // 注入 axe 脚本 (如果尚未注入)
   const isAxeInjected = await page.evaluate(() => window.axe !== undefined);
   if (!isAxeInjected) {
-    console.log('💉 首次注入 axe-core 脚本...');
+    console.log(' 首次注入 axe-core 脚本...');
     await page.evaluate((source) => {
       const script = document.createElement('script');
       script.textContent = source;
@@ -64,7 +90,7 @@ async function scanPage(page, pageName) {
     });
   }, { pageName }); // 传递上下文，虽然这里没直接用，但可用于调试
 
-  console.log(`✅ 页面 [${pageName}] 扫描完成，发现 ${results.violations.length} 个问题。`);
+  console.log(` 页面 [${pageName}] 扫描完成，发现 ${results.violations.length} 个问题。`);
   
   // 为报告添加页面信息
   results.url = pageName; // 使用页面名称作为标识
@@ -234,22 +260,22 @@ async function runExtraChecks(page, pageName) {
 
 
 // -------------------------------------------------------
-// 🚀 主执行流程
+//  主执行流程
 // -------------------------------------------------------
 
 (async () => {
   // 1. 清理旧进程
-  console.log(`🔄 正在清理旧进程...`);
+  console.log(` 正在清理旧进程...`);
   try {
     execSync(`taskkill /F /IM "${CONFIG.processName}"`, { stdio: 'ignore' });
-    console.log('✅ 旧进程已清理');
+    console.log(' 旧进程已清理');
   } catch (e) {
-    console.log('ℹ️ 无需清理 (进程不存在)');
+    console.log(' 无需清理 (进程不存在)');
   }
   await new Promise(r => setTimeout(r, 1000));
 
   // 2. 启动应用
-  console.log('🚀 正在启动客户端...');
+  console.log(' 正在启动客户端...');
   const electronApp = await electron.launch({
     executablePath: CONFIG.exePath,
     timeout: 60000,
@@ -263,11 +289,11 @@ async function runExtraChecks(page, pageName) {
   try {
     // 3. 获取窗口并开始巡检
     window = await electronApp.firstWindow();
-    console.log(`✅ 成功连接窗口: "${await window.title()}"`);
+    console.log(` 成功连接窗口: "${await window.title()}"`);
 
     for (const page of pagesToScan) {
       try {
-        console.log(`\n🧭 正在导航到页面: [${page.name}]...`);
+        console.log(`\n 正在导航到页面: [${page.name}]...`);
         const navElement = window.locator(page.selector);
         await navElement.click();
         
@@ -278,20 +304,20 @@ async function runExtraChecks(page, pageName) {
         try {
             const extra = await runExtraChecks(window, page.name);
             extraResults.push(extra);
-            console.log(`🔧 已完成额外检查: ${page.name}`);
+            console.log(` 已完成额外检查: ${page.name}`);
             // 为键盘焦点问题生成截图
             try {
               const saved = await saveFocusScreenshots(window, extra.keyboardFocus && extra.keyboardFocus.problems, page.name);
               if (saved && saved.length) console.log(`📷 已为 ${page.name} 保存 ${saved.length} 张焦点问题截图（目录：a11y-issues/screenshots）`);
             } catch (ssErr) {
-              console.warn('⚠️ 保存焦点截图失败:', ssErr.message);
+              console.warn(' 保存焦点截图失败:', ssErr.message);
             }
         } catch (exCheckErr) {
-          console.warn(`⚠️ 额外检查失败: ${page.name}`, exCheckErr.message);
+          console.warn(` 额外检查失败: ${page.name}`, exCheckErr.message);
         }
         
       } catch (navError) {
-        console.error(`❌ 导航或扫描页面 [${page.name}] 失败:`, navError.message);
+        console.error(` 导航或扫描页面 [${page.name}] 失败:`, navError.message);
         console.error(`   使用的选择器: ${page.selector}`);
         // 可选：在这里添加截图逻辑以帮助调试
         // await window.screenshot({ path: `error_${page.name}.png` });
@@ -314,7 +340,7 @@ async function runExtraChecks(page, pageName) {
     });
     
     // 5. 生成统一报告
-    console.log('\n\n📊 所有页面巡检完毕，正在生成统一的 HTML 报告...');
+    console.log('\n\n 所有页面巡检完毕，正在生成统一的 HTML 报告...');
     if (!fs.existsSync(CONFIG.reportDir)) fs.mkdirSync(CONFIG.reportDir);
     
     const reportName = `report-multipage-${Date.now()}.html`;
@@ -327,8 +353,8 @@ async function runExtraChecks(page, pageName) {
       }
     });
     
-    console.log(`\n✅ 报告已生成! 请打开查看详情:`);
-    console.log(`👉 ${path.resolve(CONFIG.reportDir, reportName)}\n`);
+    console.log(`\n 报告已生成! 请打开查看详情:`);
+    console.log(` ${path.resolve(CONFIG.reportDir, reportName)}\n`);
 
     // 写入额外检查的 JSON 报告
     try {
@@ -336,16 +362,16 @@ async function runExtraChecks(page, pageName) {
         const extraName = `report-multipage-extra-${Date.now()}.json`;
         const extraPath = path.join(CONFIG.reportDir, extraName);
         fs.writeFileSync(extraPath, JSON.stringify({ generated: Date.now(), pages: extraResults }, null, 2), 'utf8');
-        console.log(`📄 额外检查 JSON 已保存: ${path.resolve(extraPath)}`);
+        console.log(` 额外检查 JSON 已保存: ${path.resolve(extraPath)}`);
       } else {
-        console.log('ℹ️ 未收集到额外检查结果，未生成 JSON 报告。');
+        console.log(' 未收集到额外检查结果，未生成 JSON 报告。');
       }
     } catch (writeErr) {
-      console.error('❌ 写入额外检查 JSON 失败:', writeErr.message);
+      console.error(' 写入额外检查 JSON 失败:', writeErr.message);
     }
 
   } catch (e) {
-    console.error('❌ 发生严重错误:', e);
+    console.error(' 发生严重错误:', e);
   } finally {
     // 5. 关闭应用
     console.log(' closing app');
