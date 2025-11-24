@@ -1,0 +1,21 @@
+node_modules/
+package-lock.json
+
+# VS Code / JetBrains
+.vscode/
+.idea/
+
+# Generated reports / artifacts
+axe-reports/
+a11y-issues/
+*.log
+*.png
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Optional: lock files and local env
+.env
+dist/
+coverage/
