@@ -1,21 +1,38 @@
 {
-  "name": "a11y",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "a11y-test-suite",
+  "version": "2.0.0",
+  "description": "Enhanced Accessibility Testing Framework with modular architecture",
+  "main": "src/index.js",
+  "bin": {
+    "a11y-test": "src/index.js"
   },
-  "keywords": [],
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node src/index.js --dry-run",
+    "legacy": "node test_exe.js",
+    "clean": "rm -rf axe-reports a11y-issues/screenshots/*.png"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "testing",
+    "axe-core",
+    "playwright",
+    "automation"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "devDependencies": {
     "@axe-core/playwright": "^4.11.0",
     "playwright": "^1.56.1"
   },
   "dependencies": {
     "axe-core": "^4.11.0",
-    "axe-html-reporter": "^2.2.11"
+    "axe-html-reporter": "^2.2.11",
+    "commander": "^10.0.0"
   }
 }
